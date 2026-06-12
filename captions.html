@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Captions — ES Lesson Uploader</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .card { background: #16213e; border-radius: 10px; padding: 16px; margin: 14px 0; }
+  .file { font-family: monospace; font-size: 0.8rem; color: #888; margin-bottom: 8px; }
+  .caption { margin-bottom: 6px; }
+  .tags { color: #e94560; font-size: 0.9rem; margin-bottom: 12px; }
+  button {
+    background: #e94560; color: #fff; border: none; border-radius: 6px;
+    padding: 10px 16px; font-size: 1rem; width: 100%;
+  }
+  button.copied { background: #2e8b57; }
+</style>
+</head>
+<body>
+<h1>Captions<span>.</span></h1>
+<p>Tap copy, then paste into the TikTok caption field.</p>
+<h2>Originals</h2>
+<div class="card">
+  <div class="file">lesson-01-cognate-with-audio.mp4</div>
+  <div class="caption">You already speak Spanish — you just don't know it yet 🤯 Same words, just move the stress to the end. Say them out loud: animal, hospital, capital, natural.</div>
+  <div class="tags">#learnspanish #spanish #spanishtok #languagelearning #fyp</div>
+  <button data-copy="You already speak Spanish — you just don't know it yet 🤯 Same words, just move the stress to the end. Say them out loud: animal, hospital, capital, natural.&#10;&#10;#learnspanish #spanish #spanishtok #languagelearning #fyp">Copy caption</button>
+</div>
+<div class="card">
+  <div class="file">lesson-02-vowels-v3.mp4</div>
+  <div class="caption">Spanish is easier to read out loud than English — the vowels never change: a-e-i-o-u = ah-eh-ee-oh-oo. Then read these: natural, metal, legal, ideal.</div>
+  <div class="tags">#learnspanish #spanishtok #spanish #languagelearning #fyp</div>
+  <button data-copy="Spanish is easier to read out loud than English — the vowels never change: a-e-i-o-u = ah-eh-ee-oh-oo. Then read these: natural, metal, legal, ideal.&#10;&#10;#learnspanish #spanishtok #spanish #languagelearning #fyp">Copy caption</button>
+</div>
+<div class="card">
+  <div class="file">lesson-03-es.mp4</div>
+  <div class="caption">One tiny Spanish word builds a pile of sentences: es normal, es legal, es natural, es liberal, es ideal.</div>
+  <div class="tags">#learnspanish #spanishtok #spanish #languagelearning #studytok</div>
+  <button data-copy="One tiny Spanish word builds a pile of sentences: es normal, es legal, es natural, es liberal, es ideal.&#10;&#10;#learnspanish #spanishtok #spanish #languagelearning #studytok">Copy caption</button>
+</div>
+<div class="card">
+  <div class="file">lesson-04-no-es.mp4</div>
+  <div class="caption">To say it is not in Spanish, put no before es: no es normal, no es legal, no es ideal, no es natural.</div>
+  <div class="tags">#learnspanish #spanishtok #spanish #languagelearning #studytok</div>
+  <button data-copy="To say it is not in Spanish, put no before es: no es normal, no es legal, no es ideal, no es natural.&#10;&#10;#learnspanish #spanishtok #spanish #languagelearning #studytok">Copy caption</button>
+</div>
+<div class="card">
+  <div class="file">lesson-05-ant-ent.mp4</div>
+  <div class="caption">English words ending in ant or ent often become Spanish by adding e: importante, diferente, constante, excelente, evidente.</div>
+  <div class="tags">#learnspanish #spanishtok #spanish #languagelearning #studytok</div>
+  <button data-copy="English words ending in ant or ent often become Spanish by adding e: importante, diferente, constante, excelente, evidente.&#10;&#10;#learnspanish #spanishtok #spanish #languagelearning #studytok">Copy caption</button>
+</div>
+<div class="card">
+  <div class="file">lesson-06-mente-adverbs.mp4</div>
+  <div class="caption">Spanish uses mente for many English ly words: normalmente, legalmente, naturalmente, constantemente, realmente.</div>
+  <div class="tags">#learnspanish #spanishtok #spanish #languagelearning #studytok</div>
+  <button data-copy="Spanish uses mente for many English ly words: normalmente, legalmente, naturalmente, constantemente, realmente.&#10;&#10;#learnspanish #spanishtok #spanish #languagelearning #studytok">Copy caption</button>
+</div>
+<h2>Micro-cuts (~15-28s)</h2>
+<div class="card">
+  <div class="file">lesson-02-vowels-15s.mp4</div>
+  <div class="caption">Spanish vowels never change: a-e-i-o-u = ah-eh-ee-oh-oo. Now read these out loud: natural, legal.</div>
+  <div class="tags">#learnspanish #spanishtok #spanish #languagelearning #fyp</div>
+  <button data-copy="Spanish vowels never change: a-e-i-o-u = ah-eh-ee-oh-oo. Now read these out loud: natural, legal.&#10;&#10;#learnspanish #spanishtok #spanish #languagelearning #fyp">Copy caption</button>
+</div>
+<div class="card">
+  <div class="file">lesson-03-es-15s.mp4</div>
+  <div class="caption">One tiny Spanish word builds sentences: es normal, es legal. That's it, that's the grammar.</div>
+  <div class="tags">#learnspanish #spanishtok #spanish #languagelearning #fyp</div>
+  <button data-copy="One tiny Spanish word builds sentences: es normal, es legal. That's it, that's the grammar.&#10;&#10;#learnspanish #spanishtok #spanish #languagelearning #fyp">Copy caption</button>
+</div>
+<div class="card">
+  <div class="file">lesson-04-no-es-15s.mp4</div>
+  <div class="caption">Negative sentences in Spanish: park no in front. Es legal → no es legal. The whole move.</div>
+  <div class="tags">#learnspanish #spanishtok #spanish #languagelearning #fyp</div>
+  <button data-copy="Negative sentences in Spanish: park no in front. Es legal → no es legal. The whole move.&#10;&#10;#learnspanish #spanishtok #spanish #languagelearning #fyp">Copy caption</button>
+</div>
+<div class="card">
+  <div class="file">lesson-05-ant-ent-15s.mp4</div>
+  <div class="caption">English words ending in ant/ent often become Spanish by adding e: importante, constante, excelente.</div>
+  <div class="tags">#learnspanish #spanishtok #spanish #languagelearning #fyp</div>
+  <button data-copy="English words ending in ant/ent often become Spanish by adding e: importante, constante, excelente.&#10;&#10;#learnspanish #spanishtok #spanish #languagelearning #fyp">Copy caption</button>
+</div>
+<div class="card">
+  <div class="file">lesson-06-mente-15s.mp4</div>
+  <div class="caption">Spanish swaps ly for mente: normalmente, legalmente, naturalmente. Same move every time.</div>
+  <div class="tags">#learnspanish #spanishtok #spanish #languagelearning #fyp</div>
+  <button data-copy="Spanish swaps ly for mente: normalmente, legalmente, naturalmente. Same move every time.&#10;&#10;#learnspanish #spanishtok #spanish #languagelearning #fyp">Copy caption</button>
+</div>
+<h2>Quiz-first (cold-open on a prompt)</h2>
+<div class="card">
+  <div class="file">lesson-02-vowels-quizfirst.mp4</div>
+  <div class="caption">Could you say it before the reveal? Spanish vowels never change: ah-eh-ee-oh-oo. Score yourself in the comments.</div>
+  <div class="tags">#learnspanish #spanishtok #spanish #languagelearning #fyp</div>
+  <button data-copy="Could you say it before the reveal? Spanish vowels never change: ah-eh-ee-oh-oo. Score yourself in the comments.&#10;&#10;#learnspanish #spanishtok #spanish #languagelearning #fyp">Copy caption</button>
+</div>
+<div class="card">
+  <div class="file">lesson-03-es-quizfirst.mp4</div>
+  <div class="caption">Did you get it before the reveal? One word — es — covers he is, she is, it is. Drop your score below.</div>
+  <div class="tags">#learnspanish #spanishtok #spanish #languagelearning #studytok</div>
+  <button data-copy="Did you get it before the reveal? One word — es — covers he is, she is, it is. Drop your score below.&#10;&#10;#learnspanish #spanishtok #spanish #languagelearning #studytok">Copy caption</button>
+</div>
+<div class="card">
+  <div class="file">lesson-04-no-es-quizfirst.mp4</div>
+  <div class="caption">Could you make it negative before the reveal? Spanish just parks no in front: no es normal, no es legal.</div>
+  <div class="tags">#learnspanish #spanishtok #spanish #languagelearning #studytok</div>
+  <button data-copy="Could you make it negative before the reveal? Spanish just parks no in front: no es normal, no es legal.&#10;&#10;#learnspanish #spanishtok #spanish #languagelearning #studytok">Copy caption</button>
+</div>
+<div class="card">
+  <div class="file">lesson-05-ant-ent-quizfirst.mp4</div>
+  <div class="caption">Could you say it before the reveal? ant/ent words become Spanish by adding e. How many did you get?</div>
+  <div class="tags">#learnspanish #spanishtok #spanish #languagelearning #studytok</div>
+  <button data-copy="Could you say it before the reveal? ant/ent words become Spanish by adding e. How many did you get?&#10;&#10;#learnspanish #spanishtok #spanish #languagelearning #studytok">Copy caption</button>
+</div>
+<div class="card">
+  <div class="file">lesson-06-mente-quizfirst.mp4</div>
+  <div class="caption">Could you guess it? Spanish swaps ly for mente: normalmente, legalmente, realmente. Score in the comments.</div>
+  <div class="tags">#learnspanish #spanishtok #spanish #languagelearning #studytok</div>
+  <button data-copy="Could you guess it? Spanish swaps ly for mente: normalmente, legalmente, realmente. Score in the comments.&#10;&#10;#learnspanish #spanishtok #spanish #languagelearning #studytok">Copy caption</button>
+</div>
+<h2>Hook swaps (Option A openings)</h2>
+<div class="card">
+  <div class="file">lesson-02-vowels-hook-a.mp4</div>
+  <div class="caption">Spanish has 5 vowel sounds. English has ~20. That's why reading Spanish out loud is easier: natural, metal, legal, ideal.</div>
+  <div class="tags">#learnspanish #spanishtok #spanish #languagelearning #fyp</div>
+  <button data-copy="Spanish has 5 vowel sounds. English has ~20. That's why reading Spanish out loud is easier: natural, metal, legal, ideal.&#10;&#10;#learnspanish #spanishtok #spanish #languagelearning #fyp">Copy caption</button>
+</div>
+<div class="card">
+  <div class="file">lesson-03-es-hook-a.mp4</div>
+  <div class="caption">The first Spanish word I'd learn if I started over: es. It builds sentences instantly — es normal, es legal, es ideal.</div>
+  <div class="tags">#learnspanish #spanishtok #spanish #languagelearning #studytok</div>
+  <button data-copy="The first Spanish word I'd learn if I started over: es. It builds sentences instantly — es normal, es legal, es ideal.&#10;&#10;#learnspanish #spanishtok #spanish #languagelearning #studytok">Copy caption</button>
+</div>
+<div class="card">
+  <div class="file">lesson-04-no-es-hook-a.mp4</div>
+  <div class="caption">Negative sentences in Spanish are easier than English — you just park no in front: no es normal, no es legal.</div>
+  <div class="tags">#learnspanish #spanishtok #spanish #languagelearning #studytok</div>
+  <button data-copy="Negative sentences in Spanish are easier than English — you just park no in front: no es normal, no es legal.&#10;&#10;#learnspanish #spanishtok #spanish #languagelearning #studytok">Copy caption</button>
+</div>
+<div class="card">
+  <div class="file">lesson-05-ant-ent-hook-a.mp4</div>
+  <div class="caption">Stop memorizing Spanish vocabulary — steal it from English: importante, diferente, constante, excelente, evidente.</div>
+  <div class="tags">#learnspanish #spanishtok #spanish #languagelearning #studytok</div>
+  <button data-copy="Stop memorizing Spanish vocabulary — steal it from English: importante, diferente, constante, excelente, evidente.&#10;&#10;#learnspanish #spanishtok #spanish #languagelearning #studytok">Copy caption</button>
+</div>
+<div class="card">
+  <div class="file">lesson-06-mente-hook-a.mp4</div>
+  <div class="caption">Turn one Spanish word into five: normal → normalmente, legal → legalmente, real → realmente. Attach mente.</div>
+  <div class="tags">#learnspanish #spanishtok #spanish #languagelearning #studytok</div>
+  <button data-copy="Turn one Spanish word into five: normal → normalmente, legal → legalmente, real → realmente. Attach mente.&#10;&#10;#learnspanish #spanishtok #spanish #languagelearning #studytok">Copy caption</button>
+</div>
+<footer>Generated from captions.md · <a href="index.html">Home</a></footer>
+<script>
+  document.querySelectorAll("button[data-copy]").forEach((btn) => {
+    btn.addEventListener("click", async () => {
+      await navigator.clipboard.writeText(btn.dataset.copy);
+      btn.textContent = "Copied!";
+      btn.classList.add("copied");
+      setTimeout(() => {
+        btn.textContent = "Copy caption";
+        btn.classList.remove("copied");
+      }, 1500);
+    });
+  });
+</script>
+</body>
+</html>
