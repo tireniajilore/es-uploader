@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TikTok OAuth Callback — ES Lesson Uploader</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Authorization callback<span>.</span></h1>
+<div id="result"></div>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const code = params.get("code");
+  const error = params.get("error");
+  const el = document.getElementById("result");
+  if (code) {
+    el.innerHTML =
+      "<p>Authorization succeeded. Copy this code and paste it into the " +
+      "uploader's <code>auth</code> command:</p>" +
+      "<div class='code-box' id='code'></div>" +
+      "<p><button id='copy'>Copy code</button></p>" +
+      "<p>This page runs entirely in your browser; the code is not sent or stored anywhere.</p>";
+    document.getElementById("code").textContent = code;
+    document.getElementById("copy").addEventListener("click", () => {
+      navigator.clipboard.writeText(code);
+      document.getElementById("copy").textContent = "Copied!";
+    });
+  } else if (error) {
+    el.innerHTML = "<p>Authorization failed: <code></code></p>";
+    el.querySelector("code").textContent = error;
+  } else {
+    el.innerHTML = "<p>No authorization code in the URL. Start the flow from the uploader script.</p>";
+  }
+</script>
+<footer>© 2026 Tireni Ajilore · <a href="index.html">Home</a></footer>
+</body>
+</html>
